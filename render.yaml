@@ -1,0 +1,16 @@
+# Render.com deployment configuration for MK Games
+services:
+  - type: web
+    name: mk-games-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+    branch: main
+    rootDir: .
+    # The default port for Node.js on Render is 10000, but Express uses process.env.PORT
+    # No need to hardcode port in server.js, just use process.env.PORT
