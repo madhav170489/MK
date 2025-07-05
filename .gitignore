@@ -8,15 +8,21 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# Development and test files
+src/test.html
+test.html
+*.test.html
+dev-*.html
+
 # Backups and temp
 *.bak
 *.backup
 *~
 
-# Test and development files
-src/test.html
-README_CLEANUP.txt
-src/js/socket.js.README.txt
+# Setup scripts (keep only in development)
+github-setup.sh
+github-setup.bat
+GITHUB_SETUP.md
 
 # Old server files (already cleaned up)
 server/test-server.js
@@ -30,6 +36,13 @@ src/js/utils/
 # Environment and config
 .env
 .env.local
+.env.production
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # VSCode
 .vscode/
