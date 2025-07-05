@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backups and temp
+*.bak
+*.backup
+*~
+
+# Test and development files
+src/test.html
+README_CLEANUP.txt
+src/js/socket.js.README.txt
+
+# Old server files (already cleaned up)
+server/test-server.js
+server/server.js.bak
+server/server.js.backup
+server/new-server.js
+
+# Unused utilities (can be re-enabled later)
+src/js/utils/
+
+# Environment and config
+.env
+.env.local
+
+# VSCode
+.vscode/
